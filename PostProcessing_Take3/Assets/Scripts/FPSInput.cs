@@ -1,71 +1,85 @@
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
-
-// Makes it easier to find the script from the Add Component Menu 
 [AddComponentMenu("Control Scripts/FPS Input")]
 
 public class FPSInput : MonoBehaviour
 {
-
     [Header("Movement Attributes")]
-
-
-
-    [Range(1.0f, 10.0f)]
 
     [SerializeField] float _speed = 5.0f;
     [SerializeField] float _gravity = -9.8f;
 
+    [SerializeField] float _jumpSpeed = 15.0f;
+	
+	public static bool AllowMovement;
+	
+	
+	
+    float _verticalVelocity;
+
     CharacterController _controller;
-
-
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
         _controller = GetComponent<CharacterController>();
-        
+		AllowMovement = true;
+
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
+        if (AllowMovement == true)
+		{
+	        if(Input.GetKeyDown(KeyCode.LeftShift))
+	        {
+	            _speed += 5.0f;
+	        }
+	        if (Input.GetKeyUp(KeyCode.LeftShift))
+	        {
+	            _speed -= 5.0f;
+	        }
 
-        // transform.Translate(
+	        // Gather input info
+	        float deltaX = Input.GetAxis("Horizontal") * _speed;
+	        float deltaZ = Input.GetAxis("Vertical") * _speed;
 
-        // Input.GetAxis("Horizontal") * _speed * Time.deltaTime,
-        // 0,
-        // Input.GetAxis("Vertical") * _speed * Time.deltaTime
+	        // Gather movement vector
+	        Vector3 movement = new(deltaX, 0.0f, deltaZ);
 
-        // );
+	        // Clamp diagonal movement
+	        movement = Vector3.ClampMagnitude(movement, _speed);
 
-        // Gather input info 
-        float deltaX = Input.GetAxis("Horizontal") * _speed;
-        float deltaZ = Input.GetAxis("Vertical") * _speed;
+	        if (_controller.isGrounded)
+	        {
+	            _verticalVelocity = _gravity;
 
-        // Create movement vector 
-        Vector3 movement = new(deltaX, 0.0f, deltaZ);
+	            if (Input.GetButtonDown("Jump"))
+	            {
+	                _verticalVelocity += _jumpSpeed;
+	            }
+	        }
+	        else
+	        {
+	            _verticalVelocity +=_gravity * 3.0f * Time.deltaTime;
+	        }
 
-
-        // Clamp diagonal movement
-        movement = Vector3.ClampMagnitude(movement, _speed);
-
-        // Apply gravity after X and Z have been clamped 
-        movement.y = _gravity;
-
-        // Consider frame rate
-        // Can also be written as movement = movement * Time.deltaTime;
-        movement *= Time.deltaTime;
-
-        // Convert movement vecotr to the rotation of the player 
-        movement = transform.TransformDirection(movement);
-
-        // Move!
-        _controller.Move(movement);
+	        Debug.Log(_verticalVelocity);
 
 
+	        // Apply gravity after X and Z have been clamped
+	        movement.y = _verticalVelocity;
+
+	        // Consider frame rate
+	        movement *= Time.deltaTime;
+
+	        // Convert movement vector to the rotation of the player
+	        movement = transform.TransformDirection(movement);
+
+	        // Move!
+	        _controller.Move(movement);
+			
+		}
         
     }
 }

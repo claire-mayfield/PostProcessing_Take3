@@ -1,25 +1,25 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: /Users/clairemayfield/Desktop/MTEC-340/Projects/MTEC-340_Week9/Unity/FA25_IntroTo3D/Packages/manifest.json
+    m_FilePath: /Users/clairemayfield/Desktop/GitHub/PostProcessing_Take3/PostProcessing_Take3/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638975383310000000
-    m_Hash: 3443155919
+      ticks: 639005001720000000
+    m_Hash: 875318691
   m_LockFileStatus:
-    m_FilePath: /Users/clairemayfield/Desktop/MTEC-340/Projects/MTEC-340_Week9/Unity/FA25_IntroTo3D/Packages/packages-lock.json
+    m_FilePath: /Users/clairemayfield/Desktop/GitHub/PostProcessing_Take3/PostProcessing_Take3/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638975383310000000
-    m_Hash: 1654682545
+      ticks: 639005001720000000
+    m_Hash: 3240047417
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
-m_ProjectPath: /Users/clairemayfield/Desktop/MTEC-340/Projects/MTEC-340_Week9/Unity/FA25_IntroTo3D/Packages
+m_ProjectPath: /Users/clairemayfield/Desktop/GitHub/PostProcessing_Take3/PostProcessing_Take3/Packages
 m_EditorVersion: 6000.0.57f1 (b7b9860b7bbd)
 m_ResolvedPackages:
 - packageId: com.unity.collab-proxy@2.10.1
@@ -27,7 +27,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.10.1
   source: 1
-  resolvedPath: /Users/clairemayfield/Desktop/MTEC-340/Projects/MTEC-340_Week9/Unity/FA25_IntroTo3D/Library/PackageCache/com.unity.collab-proxy@b8d65294b30f
+  resolvedPath: /Users/clairemayfield/Desktop/GitHub/PostProcessing_Take3/PostProcessing_Take3/Library/PackageCache/com.unity.collab-proxy@b8d65294b30f
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Unity Version Control
@@ -127,11 +127,13 @@ m_ResolvedPackages:
     - 2.9.3
     - 2.10.0
     - 2.10.1
+    - 2.10.2
     compatible:
     - 2.9.2
     - 2.9.3
     - 2.10.0
     - 2.10.1
+    - 2.10.2
     recommended: 2.9.3
     deprecated: []
   dependencies: []
@@ -234,7 +236,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.2
   source: 2
-  resolvedPath: /Users/clairemayfield/Desktop/MTEC-340/Projects/MTEC-340_Week9/Unity/FA25_IntroTo3D/Library/PackageCache/com.unity.feature.development@767aadbc6eb7
+  resolvedPath: /Users/clairemayfield/Desktop/GitHub/PostProcessing_Take3/PostProcessing_Take3/Library/PackageCache/com.unity.feature.development@767aadbc6eb7
   assetPath: Packages/com.unity.feature.development
   name: com.unity.feature.development
   displayName: Engineering
@@ -344,7 +346,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.14.2
   source: 1
-  resolvedPath: /Users/clairemayfield/Desktop/MTEC-340/Projects/MTEC-340_Week9/Unity/FA25_IntroTo3D/Library/PackageCache/com.unity.inputsystem@be6c4fd0abf5
+  resolvedPath: /Users/clairemayfield/Desktop/GitHub/PostProcessing_Take3/PostProcessing_Take3/Library/PackageCache/com.unity.inputsystem@be6c4fd0abf5
   assetPath: Packages/com.unity.inputsystem
   name: com.unity.inputsystem
   displayName: Input System
@@ -417,9 +419,13 @@ m_ResolvedPackages:
     - 1.14.1
     - 1.14.2
     - 1.15.0
+    - 1.16.0
+    - 1.17.0
     compatible:
     - 1.14.2
     - 1.15.0
+    - 1.16.0
+    - 1.17.0
     recommended: 1.14.2
     deprecated: []
   dependencies:
@@ -501,7 +507,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/clairemayfield/Desktop/MTEC-340/Projects/MTEC-340_Week9/Unity/FA25_IntroTo3D/Library/PackageCache/com.unity.multiplayer.center@f3fb577b3546
+  resolvedPath: /Users/clairemayfield/Desktop/GitHub/PostProcessing_Take3/PostProcessing_Take3/Library/PackageCache/com.unity.multiplayer.center@f3fb577b3546
   assetPath: Packages/com.unity.multiplayer.center
   name: com.unity.multiplayer.center
   displayName: Multiplayer Center
@@ -589,12 +595,136 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
+- packageId: com.unity.postprocessing@3.5.1
+  testable: 0
+  isDirectDependency: 1
+  version: 3.5.1
+  source: 1
+  resolvedPath: /Users/clairemayfield/Desktop/GitHub/PostProcessing_Take3/PostProcessing_Take3/Library/PackageCache/com.unity.postprocessing@4a41da475b74
+  assetPath: Packages/com.unity.postprocessing
+  name: com.unity.postprocessing
+  displayName: Post Processing
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: The post-processing stack (v2) comes with a collection of effects
+    and image filters you can apply to your cameras to improve the visuals of your
+    games.
+  errors: []
+  versions:
+    all:
+    - 0.1.7
+    - 0.1.8
+    - 2.0.0-beta
+    - 2.0.1-beta
+    - 2.0.2-preview
+    - 2.0.3-preview
+    - 2.0.5-preview
+    - 2.0.7-preview
+    - 2.0.8-preview
+    - 2.0.9-preview
+    - 2.0.10-preview
+    - 2.0.11-preview
+    - 2.0.12-preview
+    - 2.0.13-preview
+    - 2.0.14-preview
+    - 2.0.15-preview
+    - 2.0.16-preview
+    - 2.0.17-preview
+    - 2.1.0
+    - 2.1.1
+    - 2.1.2
+    - 2.1.3
+    - 2.1.4
+    - 2.1.5
+    - 2.1.6
+    - 2.1.7
+    - 2.2.1
+    - 2.2.2
+    - 2.3.0
+    - 3.0.1
+    - 3.0.3
+    - 3.1.0
+    - 3.1.1
+    - 3.2.0
+    - 3.2.1
+    - 3.2.2
+    - 3.3.0
+    - 3.4.0
+    - 3.5.0
+    - 3.5.1
+    compatible:
+    - 3.5.0
+    - 3.5.1
+    recommended: 3.5.1
+    deprecated: []
+  dependencies:
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638938742139640000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.postprocessing@3.5/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/Graphics.git
+    revision: fa7961686d1f2babd45a3acaf1f3939696bd1b2e
+    path: 
+  unityLifecycle:
+    version: 3.5.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Added\n- Added Switch2 platform support\n\n###
+    Fixed\n- Remove support for PVRTC format in Unity 6.1 or newer\n- Fixed compute
+    based effects not supported on OpenGLES\n- Fixed issue with FastSign on WebGL/Safari
+    (IN-71005)\n- Documentation updates"}'
+  assetStore:
+    productId: 
+  fingerprint: 4a41da475b743ff131a9cfa5fdb2ff80d2c0f2d4
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 3.5.0
+    minimumUnityVersion: 2019.4.19f1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.timeline@1.8.9
   testable: 0
   isDirectDependency: 1
   version: 1.8.9
   source: 1
-  resolvedPath: /Users/clairemayfield/Desktop/MTEC-340/Projects/MTEC-340_Week9/Unity/FA25_IntroTo3D/Library/PackageCache/com.unity.timeline@6b9e48457ddb
+  resolvedPath: /Users/clairemayfield/Desktop/GitHub/PostProcessing_Take3/PostProcessing_Take3/Library/PackageCache/com.unity.timeline@6b9e48457ddb
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -791,7 +921,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.0
   source: 2
-  resolvedPath: /Users/clairemayfield/Desktop/MTEC-340/Projects/MTEC-340_Week9/Unity/FA25_IntroTo3D/Library/PackageCache/com.unity.ugui@58f0e62c6dfa
+  resolvedPath: /Users/clairemayfield/Desktop/GitHub/PostProcessing_Take3/PostProcessing_Take3/Library/PackageCache/com.unity.ugui@58f0e62c6dfa
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: Unity UI
@@ -886,7 +1016,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.9.7
   source: 1
-  resolvedPath: /Users/clairemayfield/Desktop/MTEC-340/Projects/MTEC-340_Week9/Unity/FA25_IntroTo3D/Library/PackageCache/com.unity.visualscripting@6279e2b7c485
+  resolvedPath: /Users/clairemayfield/Desktop/GitHub/PostProcessing_Take3/PostProcessing_Take3/Library/PackageCache/com.unity.visualscripting@6279e2b7c485
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -3747,7 +3877,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.0.23
   source: 1
-  resolvedPath: /Users/clairemayfield/Desktop/MTEC-340/Projects/MTEC-340_Week9/Unity/FA25_IntroTo3D/Library/PackageCache/com.unity.ide.visualstudio@198cdf337d13
+  resolvedPath: /Users/clairemayfield/Desktop/GitHub/PostProcessing_Take3/PostProcessing_Take3/Library/PackageCache/com.unity.ide.visualstudio@198cdf337d13
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -3864,7 +3994,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 3.0.36
   source: 1
-  resolvedPath: /Users/clairemayfield/Desktop/MTEC-340/Projects/MTEC-340_Week9/Unity/FA25_IntroTo3D/Library/PackageCache/com.unity.ide.rider@4d374c7eb6db
+  resolvedPath: /Users/clairemayfield/Desktop/GitHub/PostProcessing_Take3/PostProcessing_Take3/Library/PackageCache/com.unity.ide.rider@4d374c7eb6db
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -3996,7 +4126,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 1
-  resolvedPath: /Users/clairemayfield/Desktop/MTEC-340/Projects/MTEC-340_Week9/Unity/FA25_IntroTo3D/Library/PackageCache/com.unity.editorcoroutines@7d48783e7b8c
+  resolvedPath: /Users/clairemayfield/Desktop/GitHub/PostProcessing_Take3/PostProcessing_Take3/Library/PackageCache/com.unity.editorcoroutines@7d48783e7b8c
   assetPath: Packages/com.unity.editorcoroutines
   name: com.unity.editorcoroutines
   displayName: Editor Coroutines
@@ -4084,7 +4214,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.2.3
   source: 1
-  resolvedPath: /Users/clairemayfield/Desktop/MTEC-340/Projects/MTEC-340_Week9/Unity/FA25_IntroTo3D/Library/PackageCache/com.unity.performance.profile-analyzer@a68e7bc84997
+  resolvedPath: /Users/clairemayfield/Desktop/GitHub/PostProcessing_Take3/PostProcessing_Take3/Library/PackageCache/com.unity.performance.profile-analyzer@a68e7bc84997
   assetPath: Packages/com.unity.performance.profile-analyzer
   name: com.unity.performance.profile-analyzer
   displayName: Profile Analyzer
@@ -4180,7 +4310,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.5.1
   source: 2
-  resolvedPath: /Users/clairemayfield/Desktop/MTEC-340/Projects/MTEC-340_Week9/Unity/FA25_IntroTo3D/Library/PackageCache/com.unity.test-framework@16d3eb9e8c28
+  resolvedPath: /Users/clairemayfield/Desktop/GitHub/PostProcessing_Take3/PostProcessing_Take3/Library/PackageCache/com.unity.test-framework@16d3eb9e8c28
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -4269,7 +4399,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.2.6
   source: 1
-  resolvedPath: /Users/clairemayfield/Desktop/MTEC-340/Projects/MTEC-340_Week9/Unity/FA25_IntroTo3D/Library/PackageCache/com.unity.testtools.codecoverage@205a02cbcb39
+  resolvedPath: /Users/clairemayfield/Desktop/GitHub/PostProcessing_Take3/PostProcessing_Take3/Library/PackageCache/com.unity.testtools.codecoverage@205a02cbcb39
   assetPath: Packages/com.unity.testtools.codecoverage
   name: com.unity.testtools.codecoverage
   displayName: Code Coverage
@@ -4403,7 +4533,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.1.0
   source: 1
-  resolvedPath: /Users/clairemayfield/Desktop/MTEC-340/Projects/MTEC-340_Week9/Unity/FA25_IntroTo3D/Library/PackageCache/com.unity.settings-manager@41738c275190
+  resolvedPath: /Users/clairemayfield/Desktop/GitHub/PostProcessing_Take3/PostProcessing_Take3/Library/PackageCache/com.unity.settings-manager@41738c275190
   assetPath: Packages/com.unity.settings-manager
   name: com.unity.settings-manager
   displayName: Settings Manager
@@ -4491,7 +4621,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.0.5
   source: 2
-  resolvedPath: /Users/clairemayfield/Desktop/MTEC-340/Projects/MTEC-340_Week9/Unity/FA25_IntroTo3D/Library/PackageCache/com.unity.ext.nunit@031a54704bff
+  resolvedPath: /Users/clairemayfield/Desktop/GitHub/PostProcessing_Take3/PostProcessing_Take3/Library/PackageCache/com.unity.ext.nunit@031a54704bff
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
